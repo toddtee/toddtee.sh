@@ -4,9 +4,8 @@ on:
     branches:
       - development
   pull_request:
-
 jobs:
-  checkout-repo:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -16,29 +15,29 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-  get-hugo:
-    runs-on: ubuntu-latest
-    steps:
       - name: install-hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
-  build:
-    needs: [checkout-repo, get-hugo]
-    runs-on: ubuntu-latest
-    steps:
       - name: build
         run: hugo --minify
+      - name: upload-static-site-artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: static-site
+          path: ./public
 
   release-development:
-    needs: [checkout-repo, get-hugo, build]
+    needs: [build]
     runs-on: ubuntu-latest
     permissions:
-      id-token: read
+      id-token: write
     steps:
+      - name: download-static-site-artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: static-site
       - name: aws-credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -46,4 +45,5 @@ jobs:
           aws-region: ap-southeast-2
       - name: test
         run: |
+          ls
           aws s3 ls

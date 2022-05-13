@@ -16,6 +16,8 @@ build:
 .PHONY: build
 
 deployDev: build
+> whereis hugo
+> hugo version
 > hugo deploy --target development
 .PHONY: deploy
 

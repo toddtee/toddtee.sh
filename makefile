@@ -1,4 +1,4 @@
-SHELL := zsh
+SHELL := bash
 .ONESHELL:
 .SHELLFLAGS := -eu -o pipefail -c
 .DELETE_ON_ERROR:
@@ -16,8 +16,6 @@ build:
 .PHONY: build
 
 deployDev: build
-> whereis hugo
-> hugo version
 > hugo deploy --target development
 .PHONY: deploy
 

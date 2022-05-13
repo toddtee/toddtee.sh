@@ -1,4 +1,4 @@
-baseurl      = "toddtee.sh"
+baseurl      = "https://dev.toddtee.sh"
 title        = "Todd Turner"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
@@ -70,13 +70,23 @@ enableEmoji=true
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"
+    url        = "/posts/index.html"
   [[menu.main]]
     identifier = "contact"
-    name       = "Say Hi"
-    url        = "/contact"
+    name       = "About Me"
+    url        = "/about/index.html"
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "/resume"
+    url        = "/resume/index.html"
 
+[deployment]
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "development"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+  URL = "s3://dev.toddtee.sh"
+
+cloudFrontDistributionID = "E26C8TL84QY0S1"

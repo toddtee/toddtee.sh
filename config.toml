@@ -35,7 +35,7 @@ enableEmoji=true
 
 [[params.social]]
   name = "email"
-  url = "/email"
+  url = "email/"
 
 [[params.social]]
   name = "keybase"
@@ -70,15 +70,15 @@ enableEmoji=true
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts/index.html"
+    url        = "posts/"
   [[menu.main]]
     identifier = "contact"
     name       = "About Me"
-    url        = "/about/index.html"
+    url        = "about/"
   [[menu.main]]
     identifier = "resume"
     name       = "Resume"
-    url        = "/resume/index.html"
+    url        = "resume/"
 
 [deployment]
 

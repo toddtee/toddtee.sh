@@ -1,1 +1,1 @@
-| You can read all about me soon! :sunglasses:
+| Read all about me soon! :sunglasses:

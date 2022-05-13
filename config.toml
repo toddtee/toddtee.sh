@@ -21,7 +21,7 @@ enableEmoji=true
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "Engineer, Developer, Infrastructure"
   keywords = "homepage, blog"
   images = [""]
 
@@ -35,7 +35,7 @@ enableEmoji=true
 
 [[params.social]]
   name = "email"
-  url = "hi@toddtee.sh"
+  url = "/email"
 
 [[params.social]]
   name = "keybase"
@@ -43,7 +43,7 @@ enableEmoji=true
 
 [[params.social]]
   name = "gpg"
-  url = "A3575FCC1FFA92728CAFA00008AFCE1FF34F3675"
+  url = "https://keybase.io/toddtee/pgp_keys.asc?fingerprint=a3575fcc1ffa92728cafa00008afce1ff34f3675"
 
 [taxonomies]
     category = "blog"

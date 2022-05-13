@@ -12,5 +12,14 @@ endif
 .RECIPEPREFIX = >
 
 build:
-> hugo --cleanDestinationDir
+> hugo --cleanDestinationDir --minify
 .PHONY: build
+
+deployDev: build
+> hugo deploy --target development
+.PHONY: deploy
+
+server:
+> hugo server -D -F
+.PHONY: server
+

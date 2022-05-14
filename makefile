@@ -11,12 +11,20 @@ ifeq ($(origin .RECIPEPREFIX), undefined)
 endif
 .RECIPEPREFIX = >
 
-build:
-> hugo --cleanDestinationDir --minify
-.PHONY: build
+buildDev:
+> hugo --cleanDestinationDir --config config-development.toml
+.PHONY: buildDev
 
-deployDev: build
-> hugo deploy --target development
+buildProd:
+> hugo --cleanDestinationDir --config config-production.toml
+.PHONY: buildProd
+
+deployDev: buildDev
+> hugo deploy --target development --config config-development.toml
+.PHONY: deploy
+
+deployProd: buildProd
+> hugo deploy --target production --config config-production.toml
 .PHONY: deploy
 
 server:

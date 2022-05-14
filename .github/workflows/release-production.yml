@@ -1,0 +1,44 @@
+name: release-production
+on:
+  push:
+    branches:
+      - master
+jobs:
+  get-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: checkout-repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: upload-static-site-artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: repo
+          path: .
+
+  release-production:
+    needs: [get-repo]
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: get-repo
+        uses: actions/download-artifact@v2
+        with:
+          name: repo
+      - name: aws-credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::621936952358:role/infrastructure-ci-Role-1EBR5QIBIRAR7
+          aws-region: ap-southeast-2
+      - name: install-hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: release-production
+        run: make deployProd

@@ -3,9 +3,9 @@ package main
 // import (
 // 	"testing"
 
-// 	"github.com/aws/aws-cdk-go/awscdk/v2"
-// 	assertions "github.com/aws/aws-cdk-go/awscdk/v2/assertions"
-// 	"github.com/aws/jsii-runtime-go"
+// 	"github.com/dev/dev-cdk-go/awscdk/v2"
+// 	assertions "github.com/dev/dev-cdk-go/awscdk/v2/assertions"
+// 	"github.com/dev/jsii-runtime-go"
 // )
 
 // example tests. To run these tests, uncomment this file along with the

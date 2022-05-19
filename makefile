@@ -28,6 +28,6 @@ deployProd: buildProd
 .PHONY: deploy
 
 server:
-> hugo server -D -F
+> hugo server -D -F --config config-production.toml
 .PHONY: server
 

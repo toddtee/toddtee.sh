@@ -13,10 +13,11 @@ Having previously worked as a power systems engineer for 10 years, I made the sw
 
 * Father of two. :two_women_holding_hands:
 * Can be found fishing when not working. :fishing_pole_and_fish: :fish:
-* Powered by coffee. :coffee: 
+* Powered by [coffee]. :coffee: 
 * Always happy to chat, shoot me an [email]. :inbox_tray:
-* Uses too many GIFs and Emojis :upside_down_face:
+* Uses too many GIFs and Emojis. :upside_down_face:
 
+[coffee]: https://www.buymeacoffee.com/toddtee
 [email]: ../email
 [nine]: https://www.nineforbrands.com.au/
 [resume]: ../resume

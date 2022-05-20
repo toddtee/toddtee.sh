@@ -34,6 +34,10 @@ enableEmoji=true
   url = "https://linkedin.com/in/toddtee"
 
 [[params.social]]
+name = "buymeacoffee"
+url = "https://www.buymeacoffee.com/toddtee"
+
+[[params.social]]
   name = "email"
   url = "email/"
 

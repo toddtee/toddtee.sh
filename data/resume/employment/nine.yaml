@@ -1,0 +1,20 @@
+Name: "Nine (ex. Fairfax Media)"
+Website: "https://nineforbrands.com.au"
+StartYear: 2020
+Image: "/img/employment/nine.png"
+Blurb: "Australia's largest media company."
+Roles:
+  Platform Engineer:
+    Title: "Platform Engineer"
+    Start: "April 2020"
+    End: "current"
+    Technologies:
+      - Concourse CI/CD
+      - Docker Containerisation
+      - Golang
+      - Helm Charts and Helmfile Templating
+      - Kubernetes
+      - Ruby
+      - Various AWS Services
+    Bullets:
+      - "I do X, Y, and Z awesome things at ABC."

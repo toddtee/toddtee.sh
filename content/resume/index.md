@@ -1,1 +1,0 @@
-| Where have I been? What have I seen?! :male-technologist:

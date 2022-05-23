@@ -1,0 +1,18 @@
+Name: "Lorica Health"
+Website: "https://loricahealth.com.au"
+StartYear: 2018
+Image: "/img/employment/loricahealth.png"
+Blurb: "Data and analytics powering better healthcare and efficient health marketplaces."
+Roles:
+  DataOps Engineer:
+    Title: "DataOps Engineer"
+    Start: "Feb 2018"
+    End: "March 2020"
+    Technologies:
+      - Airflow ETL Pipelines
+      - Database Operations
+      - Docker Containerisation
+      - Docker Swarm
+      - Python
+    Bullets:
+      - "I do X, Y, and Z awesome things at ABC."

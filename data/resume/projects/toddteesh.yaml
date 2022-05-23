@@ -1,0 +1,17 @@
+Name: "This Website"
+Website: "https://toddtee.sh"
+StartYear: 2022
+Image: "/img/employment/website.png"
+Blurb: "The site which you are currently on!"
+Roles:
+  Developer:
+    Title: "Developer"
+    Start: "May 2022"
+    End: "Current"
+    Technologies:
+      - AWS CDK (Golang)
+      - AWS Cloudformation, Cloudfront, Cloudfunctions, IAM, S3
+      - Github Actions
+      - Hugo
+    Bullets:
+      - "I do X, Y, and Z awesome things at ABC."

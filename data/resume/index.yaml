@@ -1,0 +1,30 @@
+---
+name: Todd Turner
+label: Engineer, Developer, Infrastructure
+email: hi @ toddtee.sh
+location:
+  city: Sydney
+  region: NSW
+summary:
+  - A motivated engineer who moves organisations from friction to fluency. I enable workflow, process and most importantly, people.
+  - A DevOps advocate with a test-driven approach to development. Team collaboration is essential; remote-first and asynchronous communication mentality.
+  - I develop solutions with a well-architected foundation, balanced with the aim of delivering value sooner than later.
+
+Skills:
+  Languages:
+  - Golang
+  - Python
+  - Ruby
+
+Tools:
+- Cloud agnostic
+- Containerisation
+- Helm Charts and Helmfile Templating
+- Kubernetes
+- Terraform / AWS CDK / Cloudformation
+- Various CI/CD platforms
+
+Frameworks:
+- Test Driven Development
+- Agile Delivery via Sprints or Kanban
+- Remote working methodologies and practices

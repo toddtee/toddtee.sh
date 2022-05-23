@@ -2,7 +2,9 @@
 <main>
     <section id="resume" class="resume">
         <div class="resume">
-            {{ partial "sidebar.html" . }}
+            <div class="resume-sidebar">
+            {{ partial "resume/sidebar.html" . }}
+            </div>
             <div class="resume-content">
                 <div class="resume-title">
                     <h1>{{ .Site.Data.resume.index.name }}</h1>

@@ -1,34 +1,40 @@
 {{ define "main" }}
 <main>
-    <section id="resume" class="resume">
-        <div class="resume">
-            <div class="resume-sidebar">
-            {{ partial "resume/sidebar.html" . }}
-            </div>
-            <div class="resume-content">
-                <div class="resume-title">
-                    <h1>{{ .Site.Data.resume.index.name }}</h1>
-                    <h2>{{ .Site.Data.resume.index.label }}</h2>
-                </div>
-            <p style="text-align: left;">
-                {{ .Site.Data.resume.index.location.city }},
-                {{ .Site.Data.resume.index.location.region }} |
-                {{ .Site.Data.resume.index.email }}
-            </p>
-            {{ range .Site.Data.resume.index.summary }}
-            <p style="text-align: left; margin: 0;">
-                {{ . }}
-            </p>
+  <section id="resume" class="resume">
+    <div class="resume">
+      <div class="resume-sidebar">
+        {{ partial "resume/sidebar.html" . }}
+      </div>
+      <div class="resume-content">
+        {{ $basics := .Site.Data.resume.basics }}
+        {{ with $basics }}
+          <div class="resume-title">
+            <h1>{{ .name }}</h1>
+            <h2>{{ .label }}</h2>
+          </div>
+          <p>
+            {{ with $basics.location }}
+              {{ .city }},
+              {{ .region }} |
             {{ end }}
-
-            <h2>Primary Skills/Tools</h2>
-            {{ range $key, $vals := .Site.Data.resume.index.Skills }}
-            <ul id="skills"><span>{{ $key }}</span>
-                {{ range $vals }}
-                <li>{{ . }}</li>
-                {{ end }}
-            </ul>
+          {{ .email }}
+          </p>
+          <p>
+          {{ range .summary }}
+            {{ . }}
+          {{ end }}
+          </p>
+        {{ end }}
+        <h2>Experience</h2>
+        {{ range $entry, $role := .Site.Data.resume.work }}
+          {{ with $role }}
+            {{ .position }}
+            {{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
+            {{ range . }}
+              <li>{{ . }}</li>
             {{ end }}
+          {{ end }}
+        {{ end }}
         </div>
         </div>
     </section>

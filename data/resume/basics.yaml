@@ -3,13 +3,14 @@ name: Todd Turner
 label: Engineer, Developer, Infrastructure
 image: https://hugo-theme-gruvbox.schnerring.net/richard-hendricks.webp
 email: hi @ toddtee.sh
-location:
-  city: Sydney
-  region: NSW
+phone:
 summary:
   - A motivated engineer who moves organisations from friction to fluency. I enable workflow, process and most importantly, people.
   - A DevOps advocate with a test-driven approach to development. Team collaboration is essential; remote-first and asynchronous communication mentality.
   - I develop solutions with a well-architected foundation, balanced with the aim of delivering value sooner than later.
+location:
+  city: Sydney
+  region: NSW
 
 Skills:
   Languages:

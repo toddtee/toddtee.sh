@@ -1,0 +1,11 @@
+<div class="date-range">
+    <span>{{ .context.startDate }}</span>
+    <span>-</span>
+    <span>
+    {{- with .context.endDate -}}
+      {{- . -}}
+    {{- else -}}
+      {{ site.Params.Resume.present | default "Present" }}
+    {{- end -}}
+  </span>
+</div>

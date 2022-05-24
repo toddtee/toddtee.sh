@@ -1,0 +1,16 @@
+name: "Lorica Health"
+location: "The Rocks - Sydney"
+description: "Data and analytics powering better and efficient healthcare markets."
+position: "DataOps Engineer"
+url: "https://loricahealth.com.au"
+startDate: "February 2018"
+summary: "Managed and automated the ingestion and ETL processing of sensitive health data."
+highlights:
+  - "Developed an automated, cloud infrastructure, scaling service for AWS resources
+     based on activity in our container orchestration service, Docker Swarm."
+  - "Automated and extended data processing pipelines ochestrated in Apache Airflow."
+  - "Cloud Infrastructure management; EC2, AutoScaling Groups, RDS, ECS."
+  - "Development of dashboards, monitoring and alarms so issues could be quickly
+     identified and resolved. Utilised DataDog, Kibana and Cloudwatch tooling."
+  - 'Incident response management, co-ordination and analysis, included running
+     post-mortems to identify "why" the incident occurred and how we could improve.'

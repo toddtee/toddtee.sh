@@ -1,11 +1,11 @@
 name: "Nine (ex. Fairfax Media)"
-location: "Remote"
+location: "Full-Time Remote"
 description: "Australia's largest media company."
 position: "Platform Engineer"
 url: "https://nineforbrands.com.au"
 startDate: "April 2020"
 endDate: "May 2022"
-summary: "Provides leadership and technical direction for a product-focused platform team. Reduce friction for application teams to do what they do best."
+summary: "Reduce friction for application teams to do what they do best."
 highlights:
   - Leveraged the power of CI/CD process to automatically migrate application releases from `helm` `v2` to `v3`.
   - Automated the creation and renewal of https redirect handling for several masthead apex domains with Terraform and AWS.

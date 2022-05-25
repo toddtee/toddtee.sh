@@ -1,0 +1,11 @@
+{{ $references := index $.Site.Data.resume.references }}
+{{ range $k, $ref := $references }}
+{{ range $ref }}
+  <section class="jr__list jr-references__list">
+  <blockquote class="jr__item jr-references__item">
+    <p>{{ .reference }}</p>
+    <p>— {{ .name }}</p>
+  </blockquote>
+  {{ end }}
+{{ end }}
+</section>

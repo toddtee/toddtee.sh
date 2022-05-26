@@ -5,7 +5,7 @@
     <h2>{{ .label }}</h2>
 </div>
 <p>
-    {{ with $basics.location }}
+    {{ with .location }}
     {{ .city }},
     {{ .region }} |
     {{ end }}

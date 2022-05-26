@@ -1,4 +1,14 @@
-<div class="sidebar">
-    {{ partial "resume/basics.html" . }}
-    {{ $.Site.Data.resume.basics.name }}
-</div>
+{{ $basics := .Site.Data.resume.basics }}
+{{ with $basics }}
+  <div class="sidebar">
+    {{ partial "resume/basics-image.html" . }}
+  </div>
+  {{ with .about }}
+  <div class="jr-basics__about">{{ . }}</div>
+  {{ end }}
+  {{ with .skills }}
+  <div class="jr-basics__skills">
+  {{ partial "resume/skills.html" . }}
+  </div>
+  {{ end }}
+{{ end }}

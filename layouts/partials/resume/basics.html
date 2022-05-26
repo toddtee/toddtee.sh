@@ -1,6 +1,0 @@
-{{ $basics := index $.Site.Data.resume.basics }}
-{{ with $basics }}
-  <section>
-      {{ partial "resume/basics-image.html" . }}
-  </section>
-{{end}}

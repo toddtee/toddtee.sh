@@ -3,11 +3,11 @@
 <section class="jr__list jr-education__list">
     {{ range . }}
     <div class="jr__item jr-education__item">
-        <div class="jr__item-meta">
-            <div class="jr-education__area">{{ .area }} ({{ .studyType }})</div>
+        <div class="item-meta">
+            <div class="certification">{{ .area }} ({{ .studyType }})</div>
             {{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
             {{ if .institution }}
-            <div class="jr-education__institution">
+            <div class="institution">
                 {{ if .url }}
                 <a href="{{ .url }}">{{ .institution }}</a>
                 {{ else }}

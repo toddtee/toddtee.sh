@@ -1,10 +1,10 @@
 {{ $basics := .Site.Data.resume.basics }}
 {{ with $basics }}
-  <div class="sidebar">
+  <div class="sidebar-image">
     {{ partial "resume/basics-image.html" . }}
   </div>
   {{ with .about }}
-  <div class="jr-basics__about">{{ . }}</div>
+  <div class="resume-sidebar-about">{{ . }}</div>
   {{ end }}
   {{ with .skills }}
   <div class="jr-basics__skills">

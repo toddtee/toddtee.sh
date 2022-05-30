@@ -14,10 +14,9 @@
   &-sidebar {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2.5rem;
+    padding-right: 3rem;
     margin-top: 30px;
     min-width: 350px;
-//     background-color: lightgray;
     -webkit-flex: 1;
     flex: 1;
 
@@ -32,10 +31,13 @@
       width: 250px;
       align-items: center;
     }
+
+    &-about {
+      margin: 0.75rem 0;
+    }
   }
 
   &-content {
-//     background-color: lightblue;
     -webkit-flex: 5;
     flex: 5;
     margin-top: 30px;
@@ -49,6 +51,50 @@
         margin-top: 0;
       }
   }
+
+  .item-meta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+    a {
+      text-decoration: none;
+      color: #FE5186;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .position {
+      font-weight: bold;
+    }
+
+    .certification,
+    .position {
+      font-size: 1.125rem;
+      width: 60%;
+      align-items: left;
+    }
+
+    .name {
+    }
+
+    .date-range,
+    .location {
+      flex-grow: 1;
+      text-align: right;
+      align-items: right;
+      width: 30%;
+    }
+    .date-range {
+      width: 40%;
+    }
+
+    .summary {
+      margin-top: 0.75rem;
+    }
 
   &-title {
     font-size: 2.625rem;

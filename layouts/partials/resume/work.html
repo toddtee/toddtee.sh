@@ -1,41 +1,46 @@
 {{ range $entry, $role := .Site.Data.resume.work }}
 {{ with $role }}
-<section>
-{{ .position }}
-{{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
-{{ if or .name .location }}
-<div class="work__name">
-    {{ if .name }}
-    {{ if .url }}
-    <a href="{{ .url }}">
+<section class="work">
+  <div class="item-meta">
+    <div class="position">
+      {{ .position }}
+    </div>
+    {{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
+    {{ if or .name .location }}
+    <div class="name">
+      {{ if .name }}
+      {{ if .url }}
+        <a href="{{ .url }}">
         {{ .name }}
-    </a>
-    {{ else }}
-    <span>{{ .name }}</span>
-    {{ end }}
-    {{ end }}
+        </a>
+      {{ else }}
+        <span>{{ .name }}</span>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
     {{ with .description }}
-    <span>—</span>
-    <span class="work__description">{{ . }}</span>
+      <span>—</span>
+      <span class="description">{{ . }}</span>
     {{ end }}
-</div>
-{{ end }}
-{{ with .location }}
-<div class="work__location">{{ . }}</div>
-{{ end }}
-
-<div class="jr__item-content">
+    {{ with .location }}
+      <div class="location">{{ . }}</div>
+    {{ end }}
+  </div>
+  <div class="summary">
     {{ with .summary }}
-    <p class="jr-work__summary">{{ . }}</p>
+      <p>{{ . }}</p>
     {{ end }}
+  </div>
+  <div class="item-content">
     {{ with .highlights }}
-    <ul class="jr-work__highlights">
+      <ul class="highlights">
         {{ range . }}
-        <li>{{ . }}</li>
+          <li>{{ . }}</li>
         {{ end }}
-    </ul>
+      </ul>
     {{ end }}
-</div>
-{{ end }}
-{{ end }}
+  </div>
 </section>
+{{ end }}
+{{ end }}

@@ -1,7 +1,7 @@
 {{ if .image }}
 <div class="image">
     <img
-            src="{{ img/image }}"
+            src="{{ .image }}"
             alt="Picture{{ with .name }} of {{ . }}{{ end }}"
             width="250"
             height="250"

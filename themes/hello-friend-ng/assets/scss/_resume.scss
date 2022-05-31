@@ -2,6 +2,7 @@
   display: -webkit-flex;
   display: flex;
   min-height: 100%;
+  line-height: 1.675em;
   width: 100%;
   max-width: 1200px;
   text-align: left;
@@ -31,6 +32,10 @@
       width: 250px;
       align-items: center;
     }
+    h2, h3, h4 {
+      margin-top: 10;
+      margin-bottom: 0;
+    }
 
     &-about {
       margin: 0.75rem 0;
@@ -43,12 +48,12 @@
     margin-top: 30px;
     h1, h2, h3, h4 {
       color: #e5e5ea;
-      margin-top: 20;
       }
 
       h2, h3, h4 {
+        margin-top: 1.0em;
         font-weight: normal;
-        margin-top: 0;
+        margin-bottom: 10;
       }
   }
 
@@ -106,6 +111,14 @@
     a {
       text-decoration: none;
     }
+  }
+
+  .reference_ref {
+    font-style: italic;
+  }
+
+  .reference_name {
+    color: #FE5186;
   }
 
   &-tags {

@@ -1,0 +1,9 @@
+{{ $references := index $.Site.Data.resume.references }}
+<section class="references_list">
+{{ range $index, $ref := $references }}
+  <blockquote class="references_item">
+    <p class="reference_ref">{{ $ref.reference }}</p>
+    <p class="reference_name">— {{ $ref.name }}</pc>
+  </blockquote>
+{{ end }}
+</section>

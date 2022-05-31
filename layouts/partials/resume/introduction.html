@@ -1,0 +1,19 @@
+{{ $basics := .Site.Data.resume.basics }}
+{{ with $basics }}
+<div class="resume-title">
+    <h1>{{ .name }}</h1>
+    <h2>{{ .label }}</h2>
+</div>
+<p>
+    {{ with .location }}
+    {{ .city }},
+    {{ .region }} |
+    {{ end }}
+    {{ .email }}
+</p>
+<p>
+    {{ range .summary }}
+    {{ . }}
+    {{ end }}
+</p>
+{{ end }}

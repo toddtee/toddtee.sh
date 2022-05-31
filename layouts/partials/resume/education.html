@@ -1,0 +1,37 @@
+{{ $education := index $.Site.Data.resume.education }}
+{{ with $education }}
+<section class="jr__list jr-education__list">
+    {{ range . }}
+    <div class="jr__item jr-education__item">
+        <div class="item-meta">
+            <div class="certification">{{ .area }} ({{ .studyType }})</div>
+            {{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
+            {{ if .institution }}
+            <div class="institution">
+                {{ if .url }}
+                <a href="{{ .url }}">{{ .institution }}</a>
+                {{ else }}
+                <span>{{ .institution }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        <p class="jr-education__score">
+            {{ if .score }}
+                GPA: {{ .score }}
+            {{ end }}
+        </p>
+        {{ if .courses }}
+            {{ with .courses }}
+            <ul class="jr-education__courses">
+                {{ range . }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+    <hr>
+</section>
+{{ end }}

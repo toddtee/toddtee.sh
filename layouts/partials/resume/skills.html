@@ -1,0 +1,32 @@
+<div class="languages">
+  <h4> Languages </h4>
+  {{ with .languages }}
+  <ul class="jr-skills__languages">
+    {{ range . }}
+    <li>{{ . }}</li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>
+
+<div class="tools">
+  <h4> Tools </h4>
+  {{ with .tools }}
+  <ul class="jr-skills__languages">
+    {{ range . }}
+    <li>{{ . }}</li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>
+
+<div class="frameworks">
+  <h4> Frameworks </h4>
+  {{ with .frameworks }}
+  <ul class="jr-skills__languages">
+    {{ range . }}
+    <li>{{ . }}</li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</div>

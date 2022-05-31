@@ -1,0 +1,48 @@
+{{ range $entry, $role := .Site.Data.resume.work }}
+{{ with $role }}
+<section class="work">
+  <div class="item-meta">
+    <div class="position">
+      {{ .position }}
+    </div>
+    {{ partial "resume/duration.html" (dict "context" . "site" $.Site) }}
+    {{ if or .name .location }}
+    <div class="name">
+      {{ if .name }}
+      {{ if .url }}
+        <a href="{{ .url }}">
+        {{ .name }}
+        </a>
+      {{ else }}
+        <span>{{ .name }}</span>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </div>
+    {{ with .description }}
+      <span>—</span>
+      <span class="description">{{ . }}</span>
+    {{ end }}
+    {{ with .location }}
+      <div class="location">{{ . }}</div>
+    {{ end }}
+  </div>
+  <div class="summary">
+    {{ with .summary }}
+      <p>{{ . }}</p>
+    {{ end }}
+  </div>
+  <div class="item-content">
+    {{ with .highlights }}
+      <ul class="highlights">
+        {{ range . }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <hr>
+  </div>
+
+</section>
+{{ end }}
+{{ end }}

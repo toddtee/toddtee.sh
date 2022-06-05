@@ -3,6 +3,6 @@
 name = "development"
 # S3; see https://gocloud.dev/howto/blob/#s3
 # For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
-  URL = "s3://dev.toddtee.sh"
+  URL = "s3://www-dev.toddtee.sh"
 
-cloudFrontDistributionID = "E26C8TL84QY0S1"
+cloudFrontDistributionID = "E1M2ZA6N63T46Y"

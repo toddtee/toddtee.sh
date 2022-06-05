@@ -1,0 +1,42 @@
+dateform        = "Jan 2, 2006"
+dateformShort   = "Jan 2"
+dateformNum     = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+# Subtitle for home
+homeSubtitle = "Engineer, Developer, Infrastructure"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+
+# Metadata mostly used in document's head
+description = "Engineer, Developer, Infrastructure"
+keywords = "homepage, blog"
+images = [""]
+
+[[social]]
+name = "github"
+url = "https://github.com/toddtee"
+
+[[social]]
+name = "linkedin"
+url = "https://linkedin.com/in/toddtee"
+
+[[social]]
+name = "buymeacoffee"
+url = "https://www.buymeacoffee.com/toddtee"
+
+[[social]]
+name = "email"
+url = "email/"
+
+[[social]]
+name = "keybase"
+url = "https://keybase.io/toddtee"
+
+[[social]]
+name = "gpg"
+url = "https://keybase.io/toddtee/pgp_keys.asc?fingerprint=a3575fcc1ffa92728cafa00008afce1ff34f3675"

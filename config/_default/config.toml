@@ -1,0 +1,6 @@
+baseurl      = "localhost"
+title        = "Todd Turner"
+defaultContentLanguage = "en"
+theme        = "hello-friend-ng"
+paginate     = 10
+enableEmoji=true

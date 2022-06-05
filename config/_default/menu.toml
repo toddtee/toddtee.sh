@@ -1,0 +1,13 @@
+# And you can even create generic menu
+[[main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "posts/"
+[[main]]
+  identifier = "contact"
+  name       = "About Me"
+  url        = "about/"
+[[main]]
+  identifier = "resume"
+  name       = "Resume"
+  url        = "resume/"

@@ -1,0 +1,8 @@
+[[targets]]
+# An arbitrary name for this target.
+name = "production"
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+  URL = "s3://www.toddtee.sh"
+
+cloudFrontDistributionID = "E1VJ33XIXG1J94"

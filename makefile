@@ -12,22 +12,22 @@ endif
 .RECIPEPREFIX = >
 
 buildDev:
-> hugo --cleanDestinationDir --config config-development.toml
+> hugo --cleanDestinationDir --environment development
 .PHONY: buildDev
 
 buildProd:
-> hugo --cleanDestinationDir --config config-production.toml
+> hugo --cleanDestinationDir
 .PHONY: buildProd
 
 deployDev: buildDev
-> hugo deploy --target development --config config-development.toml
+> hugo deploy --environment development
 .PHONY: deploy
 
 deployProd: buildProd
-> hugo deploy --target production --config config-production.toml
+> hugo deploy --environment production
 .PHONY: deploy
 
 server:
-> hugo server -D -F --config config-production.toml
+> hugo server -D -F
 .PHONY: server
 

@@ -24,7 +24,7 @@ It had been a few years since I had first played the game, but upon replaying it
 I pondered why I felt this way, and then it hit me.
 I had recently secured this blog's deployment pipeline with OpenID Connect (OIDC).
 
-It then dawned on me that OpenIDC is a lot like enforcing immigration control policy in the fictional country of Arstotzka.
+It then dawned on me that OIDC is a lot like enforcing immigration control policy in the fictional country of Arstotzka.
 
 Not sure what I am on about? Let me explain...
 
@@ -116,7 +116,7 @@ This balancing relationship applies directly to cloud and CI/CD security.
 Pipeline secrets, API keys, IAM credentials, etc. are all tedious and complex to manage and maintain.
 Any manual process of providing keys or manual authentication to systems is a source of friction which is prone to error or will deter people from interacting with the system in the first place.
 
-So when I was thinking about how to secure my blog's deployment pipeline, I wanted to make the security not only as frictionless as possible, without compromising security.
+So when I was thinking about how to secure my blog's deployment pipeline, I wanted to make the security as frictionless as possible, without compromising security.
 Bonus points if it was also simple to implement and easy to maintain.
 
 *OIDC met this criteria perfectly.*

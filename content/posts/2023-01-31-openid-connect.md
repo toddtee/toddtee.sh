@@ -1,7 +1,7 @@
 ---
 title: Tokens, Please
 description: 'Comparing OpenID Connect With Video Game "Papers, Please"'
-date: 2023-02-022
+date: 2023-02-02
 author: Todd Turner
 # arrange the categories alphabetically
 categories: ['AWS', 'CI/CD', 'Security']
